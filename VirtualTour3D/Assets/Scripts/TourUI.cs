@@ -25,4 +25,12 @@ public class TourUI : MonoBehaviour
             go.SetActive(true);
         }
     }
+    public void DestroyGameObject(GameObject go)
+    {
+        Destroy(go);
+    }
+    public void EnableRaycast(bool bl)
+    {
+        PlayerRaycast.instance.enabled = bl;
+    }
 }
